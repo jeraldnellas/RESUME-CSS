@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+body {
+    background: #d5e9dc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+}
+.container .left-side {
+    position: relative;
+    background: #003147;
+    padding: 40px;
+    
+}
+.profile-text {
+    padding-top: 20px;
+    color: #fff;
+}
+.profile-text h3 {
+    font-weight: 600;
+}
+.profile-text p {
+    letter-spacing: 1px;
+    padding-top: 10px;
+}
+.profile{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+}
+.profile .imgpic {
+position: relative;
+height: 200px;
+width: 200px;
+border-radius: 50%;
+overflow: hidden;
+
+}
+.profile .imgpic img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.profile h2 {
+    padding-top: 20px;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+}
+.profile h2 span{
+    font-size: 15px;
+    text-align: center;
+}
+/* contact info */
+.contact-info {
+    padding-top: 20px;
+}
+.contact-info h3 {
+    font-weight: 800;
+    color: white;
+}
+.contact-info ul li {
+    list-style: none;
+    padding-top: 10px;
+    color: #fff;
+}
+.contact-info .icon {
+    padding-right: 5px;
+    font-size: 18px;
+    color: #0379af;
+    width: 30px;
+    cursor: pointer;
+    display: inline-block;
+}
+/*  education */
+.education {
+    padding-top: 20px;
+
+}
+.education h3 {
+color: #fff;
+font-weight: 600;
+}
+.education ul li {
+    list-style: none;
+    padding-top: 10px;
+    line-height: 25px;
+    font-weight: 300;
+    color: rgb(224, 224, 224);
+}
+.education h5 {
+    color: #0379af;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+/* skills */
+.skills {
+    padding-top: 20px;
+}
+.skills h3 {
+    color: #fff;
+    font-weight: 600;
+}
+.skills ul li {
+    position: relative;
+    list-style: none;
+    padding-top: 10px;
+    color: #fff;
+}
+.skills .percent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    border-radius: 50px;
+    background: #00121a;
+    display: block;
+    margin-top: 5px;
+   
+}
+.skills .percent div {
+    position: absolute;
+    top: 5;
+    left: 0;
+    height: 100%;
+    background: #0379af;
+    border-radius: 50px;
+}
+.container .right-side {
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+/* basic info */
+.basic-info {
+    padding-top: 20px;
+    color: #fff;
+}
+.basic-info h3 {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.box-info {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    text-align:left;
+    line-height: 25px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.box-info .text-info {
+    min-width: 140px; 
+    font-weight: 50;
+}
+.basic-info .answer-info{
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+/* about */
+.work-ex h2{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #003147;
+    margin-bottom: 10px;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.work-ex .year_company {
+    min-width: 170px;
+    line-height: 20px;
+    margin-right: 10px;
+}
+.box .position-roles h4 {
+    font-weight: bolder;
+    color: #003147;
+
+}
+
+.certification h2 {
+    color: #003147; 
+    padding-top: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.box-cert {
+    margin-bottom: 30px;
+}
+.certification .box-cert ul li {
+list-style: none;
+line-height: 23px;
+}
+.certification ul li h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.certification ul li h4 {
+    color: #003147;
+}
+/* Liscense */
+.liscense h2{
+    text-transform: uppercase;
+    color: #003147;
+    font-weight: 600;
+}
+.lis-cert ul li{
+    list-style: none;
+    line-height: 23px;
+}
+.lis-cert ul li h3 {
+    color: #00121a;
+    text-transform: uppercase;
+}
+/* hereby */
+.hereby {
+    padding-top: 40px;
+    text-align:justify;
+    font-weight: 300;
+    color: #00121a;
+    font-size: large;
+}
+
+.social-account {
+    padding-top: 100px;
+}
+.social-account ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.social-account ul li {
+    margin: 15px 0;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+}
+.social-account ul li .fa {
+    min-width: 35px;
+    color:#003147;
+    font-size: 25px;
+}
+@media (max-width:1000px) {
+    .container {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+   
+}
